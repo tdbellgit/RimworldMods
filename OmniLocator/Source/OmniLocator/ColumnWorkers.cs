@@ -129,7 +129,7 @@ namespace Lincore.OmniLocator {
                 var huntDesignation = Utils.GetDesignation(pawn, DesignationDefOf.Hunt);
                 if (huntDesignation != null) Utils.RemoveDesignation(pawn, huntDesignation);
                 if (pawn.RaceProps.manhunterOnTameFailChance > Global.MIN_RETALIATION_CHANCE_ON_TAME) {
-                    Verse.Sound.SoundStarter.PlayOneShotOnCamera(SoundDefOf.MessageAlert);
+                    Verse.Sound.SoundStarter.PlayOneShotOnCamera(SoundDefOf.Click);
                 }
             } else {
                 var tameDesignation = Utils.GetDesignation(pawn, DesignationDefOf.Tame);
@@ -166,7 +166,7 @@ namespace Lincore.OmniLocator {
                 var tameDesignation = Utils.GetDesignation(pawn, DesignationDefOf.Tame);
                 if (tameDesignation != null) Utils.RemoveDesignation(pawn, tameDesignation);
                 if (pawn.RaceProps.manhunterOnDamageChance > Global.MIN_RETALIATION_CHANCE_ON_HUNT) {
-                    Verse.Sound.SoundStarter.PlayOneShotOnCamera(SoundDefOf.MessageAlert);
+                     Verse.Sound.SoundStarter.PlayOneShotOnCamera(SoundDefOf.Click);
                 }
             } else {
                 var huntDesignation = Utils.GetDesignation(pawn, DesignationDefOf.Hunt);
